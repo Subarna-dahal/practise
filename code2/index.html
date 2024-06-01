@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random color generate</title>
+</head>
+<body class="ml_10">
+    <div class="container">
+        <h1>Background Color:</h1>
+        <button onclick="changecolor()">Click me</button>
+    </div>
+    <script>
+        function changecolor(){
+            const ml=document.querySelector('.ml_10');
+            const colors=['red','pink','yellow','blue','green'];
+            const Randomcolors=colors[Math.floor(Math.random()*colors.length)];
+            ml.style.backgroundColor=Randomcolors;
+        }
+    </script>
+</body>
+</html>
